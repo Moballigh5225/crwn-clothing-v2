@@ -15,15 +15,14 @@ const Navigation = () => {
   return (
     <Fragment>
       <div className="navigation">
-        {/* Navigation Links */}
         <Link className="logo-container" to="/">
-          {/* using image component here */}
           <CrwnLogo className="logo" />
         </Link>
         <div className="nav-links-container">
           <Link className="nav-link" to="/shop">
             SHOP
           </Link>
+
           {currentUser ? (
             <span className="nav-link" onClick={signOutUser}>
               SIGN OUT
